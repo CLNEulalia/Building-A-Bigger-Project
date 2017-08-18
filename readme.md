@@ -100,6 +100,7 @@ Bonus tip:
 ## Structuring your code (5 minutes / 1:45)
 The beauty of code is that there are so many correct answers and strategies in order to get to those correct answers. The way one person structures their code may be totally different than another person, and that is totally okay!
 
+# Tic Tac Toe Example
 In this section of the class, I am going to go over four different versions of code that does exactly the same thing -- it creates a Tic Tac Toe application.
 
 
