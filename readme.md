@@ -2,7 +2,6 @@
 
 ## Learning Objectives
 * Discuss the steps of planning an app
-    - User stories
     - Wire frames
     - Pseudo Code
 * Explain different strategies for organization
