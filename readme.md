@@ -66,7 +66,7 @@ Write code using those concrete steps
 - If we do too much at once and things break, which they always do, we won't know what is causing the problem
 - Humans thrive on easy wins and forward progress. Use this to your advantage.
 
-#### [Here] (https://github.com/ga-wdi-lessons/pseudocode/edit/master/readme.md) is a full lesson on pseudocode if you are interested in learning more!
+#### [Here](https://github.com/ga-wdi-lessons/pseudocode) is a full lesson on pseudocode if you are interested in learning more!
 
 #### Exercise (10 minutes / 1:00)
 With your same partner from before, spend ten minutes turning your outline into pseudo code. You may not get all of they way through it -- don't worry! Submit what you have as a comment on the issue in this repository.
