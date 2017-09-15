@@ -94,4 +94,4 @@ class Turn {
     }
 }
 
-var game = new Game()
+const game = new Game()
