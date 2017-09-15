@@ -8,15 +8,15 @@ let diagTally = [[0, 0], [0, 0]]
 const boxes = Array.from(document.getElementsByClassName('box'))
 const turnDiv = document.getElementById('turn')
 
-boxes.forEach(box => box.addEventListener("click", boxSelect))
+boxes.forEach(box => box.addEventListener('click', boxSelect))
 
-function togglePlayer() {
+function togglePlayer () {
     turn = turn === 0 ? 1 : 0
     turnDiv.innerHTML = `Player ${currentChip()} it's your turn!`
 }
 
 
-function currentChip() {
+function currentChip () {
     return turn === 0 ? 'O' : 'X'
 }
 
