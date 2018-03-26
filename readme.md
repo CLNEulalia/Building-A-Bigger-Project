@@ -128,7 +128,7 @@ In this section of the class, I am going to go different versions of code that d
 ## Algorithm (5 min / 3:50)
 Instead of brute forcing the check to see if the game is over, we can do it algorithmically. We can keep track of each player's current tally of pieces in each row, column, and diagonal and if that tally is equal to three, they have won. We can do this using nested arrays. If this is unclear, do not worry! Its a bit outside the scope of this class. I used data attributes on the HTML tags to get the coordinates of the clicked on grid item, and I use those coordinates in order to update the player's score at the at position. 
 
-## Functional Approach (15 min / 4:05)
+## Functional Based (15 min / 4:05)
 * If we look at the `vanilla/script.js` or the `pf-functional-vanilla/app.js` file you can see how the code is largely composed as a set of functions. I broke each chunk of logic into a singular function so that the code is easy to debug. Any issues that pop up can be more easy to find and isolate.  
 
 Take a few minutes to go over the the code. 
