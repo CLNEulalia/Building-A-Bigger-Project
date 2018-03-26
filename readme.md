@@ -35,7 +35,13 @@ Spend 5 minutes with the person next to you outlining a **Tic Tac Toe** applicat
 ## Wire frames (5 min / 3:10)
 In addition, we can draw out what we want our interface to look like before we actually create it. We can also diagram in that image what various parts of the interface will do.
 
-With your help, I'll draw on the board what a Rock Paper Scissors App might look like.  
+With your help, I'll draw on the board what a Rock Paper Scissors App might look like. 
+
+There are also design softwares out there that help with the design process.
+* [Balsamiq](https://balsamiq.com/)
+* [Canva](https://www.canva.com/create-a-design)
+* [Vectr](https://vectr.com/)
+* [Sketch](https://www.sketchapp.com/) - note: this one is paid, but GA has a discount code if you want it!
 
 #### Exercise (5 min / 3:15)
 Spend 5 minutes with the person next to you drawing what you want your Tic Tac Toe application to look like up on the board.
