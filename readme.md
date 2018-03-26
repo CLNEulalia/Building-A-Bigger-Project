@@ -12,12 +12,6 @@
 * Discuss coding best practices in a larger app
 * Refactor and reorganize a working app
 
-## Review DOM Manipulation (20 min / 2:50)
-
-Before we dive into strategies for building out a bigger project, we're going to take sometime to review the DOM and working with Event Listeners.  
-
-Go ahead and checkout the Exercise [here](https://git.generalassemb.ly/ga-wdi-exercises/dom-review-alice)
-
 ## Planning (10 min / 3:00)
 
 The biggest challenge we face as our programs grow larger is complexity. The larger the project, the more difficult it is to break down things down into the working parts. In order to combat this, we should designate time to plan for our projects. It may seem tempting to dive right into writing code, but I can assure you, *time spent planning is time well spent*! 
