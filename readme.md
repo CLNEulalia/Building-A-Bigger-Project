@@ -1,7 +1,6 @@
 # Building a Bigger Project
 
 ## Learning Objectives
-* Review JS DOM Manipulation
 * Discuss the steps of planning an app
     - Wire frames
     - Pseudo Code
