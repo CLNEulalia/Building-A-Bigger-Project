@@ -11,6 +11,11 @@
 * Discuss coding best practices in a larger app
 * Refactor and reorganize a working app
 
+> One of the core truisms of software development is that as your code grows and requirements for the system that you are building change, additional logic will be added that is not yet present in the current system. In almost all cases, maintainability over the life of the code is more important than optimizing its present state
+
+Obie Fernandez about POODR by Sandi Metz
+
+
 ## Planning (10 min / 3:00)
 
 The biggest challenge we face as our programs grow larger is complexity. The larger the project, the more difficult it is to break down things down into the working parts. In order to combat this, we should designate time to plan for our projects. It may seem tempting to dive right into writing code, but I can assure you, *time spent planning is time well spent*! 
