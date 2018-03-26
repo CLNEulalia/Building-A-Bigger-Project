@@ -111,9 +111,11 @@ When you are working on a larger project, you probably want your code to be as r
 5. Refactor your code! *Refactoring* refers to restructuring your code to make it more readable and less complex without changing the external functionality. First get something that works and then make it better afterwards!
 
 Bonus tip:
-6. Debugging 
-    * You may see in class that a lot of times we will ask you to console.log() your variables so that we can see what they are set as at a certain point. This is a great first step to identifying where your code is going wrong. See if your variable is actually set to what you expect it to be.
-    * [Rubber Ducking](https://en.wikipedia.org/wiki/Rubber_duck_debugging) is also a great strategy. It involves explaining your code line by line to a rubber duck! The rubber duck doesn't know anything about programming, so start at zero with your explanations! You can also try [this](http://duckie.me/) virtual rubber duck!
+6. Debugging:
+
+* You may see in class that a lot of times we will ask you to console.log() your variables so that we can see what they are set as at a certain point. This is a great first step to identifying where your code is going wrong. See if your variable is actually set to what you expect it to be.
+    
+* [Rubber Ducking](https://en.wikipedia.org/wiki/Rubber_duck_debugging) is also a great strategy. It involves explaining your code line by line to a rubber duck! The rubber duck doesn't know anything about programming, so start at zero with your explanations! You can also try [this](http://duckie.me/) virtual rubber duck!
 
 #### Structuring your code
 The beauty of code is that there are so many correct answers and strategies in order to get to those correct answers. The way one person structures their code may be totally different than another person, and that is totally okay!
