@@ -86,7 +86,7 @@ Write code using those concrete steps
 - If we do too much at once and things break, which they always do, we won't know what is causing the problem
 - Humans thrive on easy wins and forward progress. Use this to your advantage.
 
-#### [Here](https://github.com/ga-wdi-lessons/pseudocode) is a full lesson on pseudocode if you are interested in learning more!
+#### [Here](https://git.generalassemb.ly/dc-wdi-fundamentals/pseudocode) is a full lesson on pseudocode if you are interested in learning more!
 
 #### Exercise (5 min / 3:30)
 With your same partner from before, spend ten minutes turning your outline into pseudo code. You may not get all of they way through it -- don't worry! Submit what you have as a comment on the issue in this repository.
@@ -143,7 +143,7 @@ How is this different from how you may have structured this app?
 Take a few minutes to look over this code. 
 
 ## MV Approach (5 min / 4:15)
-* We can also structure the code so that it falls under two different classes -- one that stores all of the responses to user interaction called the *View* controller, and one that stores the data processing methodology called the *Model*. [Here](https://git.generalassemb.ly/ga-wdi-lessons/js-model-view-seperation) is a further breakdown on how this can look. MV approach is an example of *Separation of Concerns*, a concept very important to programming large applications.  
+* We can also structure the code so that it falls under two different classes -- one that stores all of the responses to user interaction called the *View* controller, and one that stores the data processing methodology called the *Model*. [Here](https://git.generalassemb.ly/dc-wdi-fundamentals/js-model-view-separation) is a further breakdown on how this can look. MV approach is an example of *Separation of Concerns*, a concept very important to programming large applications.  
 
 Model-View separation is an important concept in developing web apps.  Why might it be important to separate your model components from your view?
 
