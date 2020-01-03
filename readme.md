@@ -16,7 +16,7 @@
 Obie Fernandez about POODR by Sandi Metz
 
 
-## Planning (10 min / 3:00)
+## Planning
 
 The biggest challenge we face as our programs grow larger is complexity. The larger the project, the more difficult it is to break down things down into the working parts. In order to combat this, we should designate time to plan for our projects. It may seem tempting to dive right into writing code, but I can assure you, *time spent planning is time well spent*! 
 
@@ -34,10 +34,7 @@ Ex:
 
 Once you have an idea of an MVP version of your product, you can start to think about ways you can scaffold your project up from there. We will talk about this more when we introduce Project 1, but you can categorize different levels of features you want to include that are not in your MVP. Think of these as *bronze*, *silver*, and *gold* features. Once you create your MVP, try to scaffold up to bronze, then scaffold up to silver, then if there is time, reach for the gold🥇!
 
-#### Exercise (5 min / 3:05)
-Spend 5 minutes with the person next to you outlining a **Tic Tac Toe** application like you would an essay. Keep in mind user events and the application's response to those events. If you have extra time, brainstorm bonus features. When complete, in the issue on this repository, create a comment with your ideas.
-
-## Wire frames (5 min / 3:10)
+## Wire frames
 In addition, we can draw out what we want our interface to look like before we actually create it. We can also diagram in that image what various parts of the interface will do.
 
 With your help, I'll draw on the board what a Rock Paper Scissors App might look like. 
@@ -46,12 +43,9 @@ There are also design softwares out there that help with the design process.
 * [Balsamiq](https://balsamiq.com/)
 * [Canva](https://www.canva.com/create-a-design)
 * [Vectr](https://vectr.com/)
-* [Sketch](https://www.sketchapp.com/) - note: this one is paid, but GA has a discount code if you want it!
+* [Sketch](https://www.sketchapp.com/)
 
-#### Exercise (5 min / 3:15)
-Spend 5 minutes with the person next to you drawing what you want your Tic Tac Toe application to look like up on the board.
-
-## Pseudo Code (10 min / 3:25)
+## Pseudo Code
 The next step we can take is to format our outline to look more like code -- there are many ways to do this and it is totally up to you how you like to do it. 
 
 *Pseudocode* is a way to describe the solution to a problem without writing code in full.
@@ -88,13 +82,10 @@ Write code using those concrete steps
 
 #### [Here](https://git.generalassemb.ly/dc-wdi-fundamentals/pseudocode) is a full lesson on pseudocode if you are interested in learning more!
 
-#### Exercise (5 min / 3:30)
-With your same partner from before, spend ten minutes turning your outline into pseudo code. You may not get all of they way through it -- don't worry! Submit what you have as a comment on the issue in this repository.
-
 #### Check it out!
 A version of pseudo code is in `outline.js`.
 
-## Making code more readable (5 min / 3:35)
+## Making code more readable
 When you are working on a larger project, you probably want your code to be as readable and as modular as possible. There are a couple rules of thumb that may be helpful for you.
 
 1. Be consistent -- if you are using semi-colons use them consistently, same is true for quotation marks (double or single?, es6
@@ -120,15 +111,13 @@ Bonus tip:
 #### Structuring your code
 The beauty of code is that there are so many correct answers and strategies in order to get to those correct answers. The way one person structures their code may be totally different than another person, and that is totally okay!
 
-## Break (10 min / 3:45)
-
 # Tic Tac Toe Example
 In this section of the class, I am going to go different versions of code that does exactly the same thing -- it creates a Tic Tac Toe application.
 
-## Algorithm (5 min / 3:50)
+## Algorithm
 Instead of brute forcing the check to see if the game is over, we can do it algorithmically. We can keep track of each player's current tally of pieces in each row, column, and diagonal and if that tally is equal to three, they have won. We can do this using nested arrays. If this is unclear, do not worry! Its a bit outside the scope of this class. I used data attributes on the HTML tags to get the coordinates of the clicked on grid item, and I use those coordinates in order to update the player's score at the at position. 
 
-## Functional Based (15 min / 4:05)
+## Functional Based
 * If we look at the `vanilla/script.js` or the `pf-functional-vanilla/app.js` file you can see how the code is largely composed as a set of functions. I broke each chunk of logic into a singular function so that the code is easy to debug. Any issues that pop up can be more easy to find and isolate.  
 
 Take a few minutes to go over the the code. 
@@ -137,17 +126,17 @@ What do you understand?
 What is confusing?
 How is this different from how you may have structured this app?
 
-## OOP Approach (5 min / 4:10)
+## OOP Approach
 * This takes the same functionality of the code before but restructures it so that the code falls into methods within a class. Yes, there is JQuery here, but it is only used sparingly.  
 
 Take a few minutes to look over this code. 
 
-## MV Approach (5 min / 4:15)
+## MV Approach
 * We can also structure the code so that it falls under two different classes -- one that stores all of the responses to user interaction called the *View* controller, and one that stores the data processing methodology called the *Model*. [Here](https://git.generalassemb.ly/dc-wdi-fundamentals/js-model-view-separation) is a further breakdown on how this can look. MV approach is an example of *Separation of Concerns*, a concept very important to programming large applications.  
 
 Model-View separation is an important concept in developing web apps.  Why might it be important to separate your model components from your view?
 
-## Review (5 min / 4:20)
+## Review
 * What are two techniques we can use for early planning (before we start writing code)?
 * Why is planning such an important step of development?
 * What does "refactor" mean?
@@ -155,5 +144,3 @@ Model-View separation is an important concept in developing web apps.  Why might
 * What are some good strategies for writing modular and clear code?
 * Explain the difference between a functional approach and an OOP approach.
 * What does Separation of Concerns mean in regards to programming?
-
-## Break (10 min / 4:30)
