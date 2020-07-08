@@ -1,146 +1,155 @@
 # Building a Bigger Project
 
 ## Learning Objectives
-* Discuss the steps of planning an app
-    - Wire frames
-    - Pseudo Code
-* Explain different strategies for organization
-    - Function based
-    - Class based
-    - Model View separation
-* Discuss coding best practices in a larger app
-* Refactor and reorganize a working app
 
-> One of the core truisms of software development is that as your code grows and requirements for the system that you are building change, additional logic will be added that is not yet present in the current system. In almost all cases, maintainability over the life of the code is more important than optimizing its present state
+- Identify and implement best-practices for planning and building an app
+- Explain different strategies for code organization
+- Discuss coding best practices in a larger app
+- Refactor and reorganize a working app
 
-Obie Fernandez about POODR by Sandi Metz
+## Lab Set Up
 
+1. Create a directory for your tic tac toe game.
+1. Switch into the directory.
+1. Add a files named `README.md` and `index.html` to the root of the directory.
+1. Initialize the directory as a `git` repository.
+1. Make your initial commit on the `master` branch.
+1. Switch into a development branch.
+1. Open the directory in Visual Studio Code.
 
-## Planning
+## Project Planning
 
-The biggest challenge we face as our programs grow larger is complexity. The larger the project, the more difficult it is to break down things down into the working parts. In order to combat this, we should designate time to plan for our projects. It may seem tempting to dive right into writing code, but I can assure you, *time spent planning is time well spent*! 
+The biggest challenge we face as our programs grow larger is complexity. The larger the project, the more difficult it is to break down things down into the working parts. In order to combat this, we need to designate sufficient time to plan for our projects. It may seem tempting to dive right into writing code, but I can assure you, this approach never ends well. When it comes to completing projects, _time spent planning is time well spent_!
 
-To combat scope creep in planning we want to abide by the mantra "[do less](https://www.youtube.com/watch?v=PKIpCPS-oZc)".  
+Planning helps us to ensure that we can complete the tasks that are necessary to satisfy the project's requirements within a given amount of time. With sufficient planning we can identify the most important tasks, providing us with a roadmap for which tasks we need to tackle first and can prevent us from falling into the _scope creep_ trap!
 
-We want to identify the "[minimum viable product (MVP)](https://www.youtube.com/watch?v=1FoCbbbcYT8)" and build the *smallest thing* that checks the most important boxes. As a rule of thumb, your MVP is probably too big - Do less!
+How much planning is enough planning? That depends on many factors, but generally, before you begin coding, you should have:
 
-When you plan what your MVP should be, think about how the users will be interacting with your site. A list of ways you want users to interact with your site are called *User Stories*. Each user story should be a feature of your site.  [More information on User Stories](http://www.agilemodeling.com/artifacts/userStory.htm) 
+- A **clear goal** identified. Frequently when planning an app this takes the form of some combination of the minimum features of the app and a visual representation of what the project will look like.
+- A solid identification of the tasks needed to satisfy the **bare minimum requirements** in the time allotted.
+- A generalized **timeline of activities** to help you manage your schedule and better recognize when you need to adjust or seek assistance.
 
-User stores should roughly follow this paradigm: "As a 'role', I can 'capability' so that 'receive benefit'".
-Ex:
-* As a user I should be able to upload photos so that I can see them in the browser
-* Users can click a square and place an 'X'
-* Students should be able to subscribe to which classes they are enrolled in.  
+### MVP and User Stories
 
-Once you have an idea of an MVP version of your product, you can start to think about ways you can scaffold your project up from there. We will talk about this more when we introduce Project 1, but you can categorize different levels of features you want to include that are not in your MVP. Think of these as *bronze*, *silver*, and *gold* features. Once you create your MVP, try to scaffold up to bronze, then scaffold up to silver, then if there is time, reach for the gold🥇!
+We want to identify the "[minimum viable product (MVP)](https://www.youtube.com/watch?v=1FoCbbbcYT8)" and build the _smallest thing_ that checks the most important boxes. If your project fails to meet the minimum requirements, it won't matter how many additional, fancy features you have in it. Once we've satisified the minimum requirements, we can always go back and add in additional features so long as time permits.
 
-## Wire frames
-In addition, we can draw out what we want our interface to look like before we actually create it. We can also diagram in that image what various parts of the interface will do.
+When planning an MVP, it's helpful to think about it in the context of how users will need to interact with our app. In industry, the way we describe these interactions are through [_User Stories_](http://www.agilemodeling.com/artifacts/userStory.htm). Each user story generally equates to a feature of your app.
 
-With your help, I'll draw on the board what a Rock Paper Scissors App might look like. 
+User stories follow this paradigm: "As a `<type-of-user>`, I want `<some-capability>` so that `<benefit-received>`".
 
-There are also design softwares out there that help with the design process.
-* [Balsamiq](https://balsamiq.com/)
-* [Canva](https://www.canva.com/create-a-design)
-* [Vectr](https://vectr.com/)
-* [Sketch](https://www.sketchapp.com/)
+- As a customer, I want to be able to add items to my shopping cart so I can purchase them when I'm done shopping.
+- As a student, I want to be able browse a list of all courses currently offered on campus so that I can identify the courses I want to enroll in.
+- As a player, I want to be informed when it is my turn in the game so that I don't have to keep track on my own.
 
-## Pseudo Code
-The next step we can take is to format our outline to look more like code -- there are many ways to do this and it is totally up to you how you like to do it. 
+Having a collection of user stories gives you the ability to prioritize them and makes it easier to identify what the essential features that must be present in your app to meet MVP. You can categorize the remaining features into stretch goals. Think of these as _bronze_, _silver_, and _gold_ features. Once you create your MVP, you can tackle the features on your bronze list. If there's still time, you can move on to silver features. Finally, if there is time, reach for the gold🥇!
 
-*Pseudocode* is a way to describe the solution to a problem without writing code in full.
-* Writing pseudocode forces you to think critically about the problem and break it down into *small steps*.
-* It is usually written using a combination of English and logic. As a result, it is easy to read.
-* It might display some features of the final product, such as indentation and code blocks.
+In prioritizing your MVP requirements, it's easy to conflate wants with needs and as a rule of thumb, **assume that your MVP too big and [do less](https://www.youtube.com/watch?v=PKIpCPS-oZc)**! Also, keep in mind that your stretch goals don't need to be a totally new feature, they can also include enhancing an existing one.
+
+#### Activity: Write User Stories
+
+Take 10 minutes and write user stories as a team for a Tic Tac Toe game app where a two users can play a game of Tic Tac Toe against eachother. Mark each user story as MVP, Bronze, Silver, or Gold. We'll review them together and add them to our `README.md` file as a class activity.
+
+### Wireframes
+
+Drawing a simplified version of the app interface is next. Wireframes are the perfect tool for this. They lack all of the details of a _mockup_ such as colors and imagery, which helps us to focus on the functionality. Frequently, wireframes are used in wireflows that diagram different interactions or paths a user might take through our app (imagine a sign up process, for example). Wireframes can also help us to refine our MVP requirements by identifying missing or overly complex features.
+
+Paper and pencil are the best for initial wireframes! It helps us to not get too invested in our design allowing us the freedom to discard it and start over if it requires changes to satisify our user stories. Even professional UX Designers regularly start with several _lofi_ paper designs before converting them to digital wireframes and mockups.
+
+#### Activity: Tic Tac Toe Wireframe
+
+Let's take a look at how a wireframe for Tic Tac Toe might look.
+
+- Based on our user stories are we missing anything vital?
+- How could we annotate our wireframe to help us when we begin coding?
+- Are there any flows that we could document with our wireframe(s)?
+
+### Pseudocode
+
+The next step we can take is to format our MVP features to look more like code -- there are many ways to do this and it is totally up to you how you like to do it.
+
+_Pseudocode_ is a way to describe the solution to a problem without writing code in full.
+
+- Writing pseudocode forces you to think critically about the problem and break it down into _small steps_.
+- It is usually written using a combination of English and logic. As a result, it is easy to read.
+- It might display some features of the final product, such as indentation and code blocks.
 
 Pseudocode should describe the entire logic of a problem so that programming becomes a task of translating pseudocode line by line into actual code.
 
-Pseudocode isn't just about writing down the steps that you already know. It's a tool to help you work through the problem. Before we can write pseudocode to solve the problem, we need to know the problem.  
-
-#### Identify the Problem
-
-- What exactly are we trying to solve?
-- What are we delivering?
-
-#### Conceptualize
-
-- Look at the big picture
-- Avoid details
-- Whiteboards and pen-and-paper can be useful tools here
-
-#### Break It Down
-
-- Break the conceptual models down into concrete steps / actionable items
-- Identify risks (e.g., gaps in knowledge and technology)
-
-#### Start Small, Stay Small
-
-Write code using those concrete steps
-- Verify that each step achieves what we want before continuing on (*Very important!*)
-- If we do too much at once and things break, which they always do, we won't know what is causing the problem
-- Humans thrive on easy wins and forward progress. Use this to your advantage.
-
 #### [Here](https://git.generalassemb.ly/dc-wdi-fundamentals/pseudocode) is a full lesson on pseudocode if you are interested in learning more!
 
-#### Check it out!
-A version of pseudo code is in `outline.js`.
+Pseudocode isn't just about writing down the steps that you already know. It's a tool to help you work through the problem. Before we can write pseudocode to solve the problem, we need to know the problem. Developing a consistent approach to problem solving coding challenges is one of the number one skills you should focus on throughout this program. Learning and practicing this approach is essential and it will apply to every job and task in your career regardless of the level of seniority you achieve or programming language you are working in:
 
-## Making code more readable
-When you are working on a larger project, you probably want your code to be as readable and as modular as possible. There are a couple rules of thumb that may be helpful for you.
+- Identify the Problem
+  - What exactly are we trying to solve?
+  - What are we delivering?
+- Conceptualize the solution
+  - Look at the big picture
+  - Avoid details
+  - Whiteboards and pen-and-paper can be useful tools here
+- Break It Down
+  - Break the conceptual models down into concrete steps / actionable items
+  - Identify risks (e.g., gaps in knowledge and technology)
 
-1. Be consistent -- if you are using semi-colons use them consistently, same is true for quotation marks (double or single?, es6
+## Structuring Your Code
 
-2. Make your code as close to normal speech as possible. Use clear variable names, comments, and clear logic so that the next person helping you can read it.
+Thus far, we've learned about how functions make our code more reusable, prototypes optimize our code and classes encapsulate and abstract away complexity in our code. So how do we decide how to best structure and organize our code and which of these tools in our toolbox are right for the job?
 
-3. Keep your code DRY -- don't repeat yourself! That's why we write code in the first place!
+The beauty of code is that there are many approaches, patterns and strategies to solving the same problem. The way one person structures their code may be totally different than another person, and that is totally okay! The only wrong code is code that doesn't work. It's true that there may be better ways to write your code that are more efficient (better for scaling), more performant (runs faster), more resilient (less likely for bugs to occur) or more readable (better for maintainability). Many times, there trade offs in one of these areas when you optimize for another. So how can we start?
 
-4. Sandi Metz's rules (totally optional but helpful)
-    - Classes can be no longer than one hundred lines of code.
-    - Methods/Functions can be no longer than five lines of code.
-    - More [here](https://robots.thoughtbot.com/sandi-metz-rules-for-developers)
+The one approach to start is to consider how you can structure your code right up front. During planning you might think about what are some of the actions that will need to be taken multiple times in your code (e.g., checking if the current move in a game resulted in a win or a tie, or determining if a given game square is occupied, or switching players). These would be ideal as functions or methods. Initially, you might add these as functions that contain only pseudocode or comments.
 
-5. Refactor your code! *Refactoring* refers to restructuring your code to make it more readable and less complex without changing the external functionality. First get something that works and then make it better afterwards!
+At the same time, you might start thinking about the different bit of information you'll need to store throughout the game (e.g., the currentPlayer or a representation of the state of the gameboard). How might we store this type of information?
 
-Bonus tip:
-6. Debugging:
+### Activity: Create a List of Functions for Tic Tac Toe
 
-* You may see in class that a lot of times we will ask you to console.log() your variables so that we can see what they are set as at a certain point. This is a great first step to identifying where your code is going wrong. See if your variable is actually set to what you expect it to be.
-    
-* [Rubber Ducking](https://en.wikipedia.org/wiki/Rubber_duck_debugging) is also a great strategy. It involves explaining your code line by line to a rubber duck! The rubber duck doesn't know anything about programming, so start at zero with your explanations! You can also try [this](http://duckie.me/) virtual rubber duck!
+Create a new `.js` file in your repo for your code. Working with your team, identify any data you'll need to store in variables and reusable bits of functionality you think would be beneficial to separate out as functions. Scaffold them out in your code file. You can add some comments to describe the purpose, but don't add an code or pseudocode yet:
 
-#### Structuring your code
-The beauty of code is that there are so many correct answers and strategies in order to get to those correct answers. The way one person structures their code may be totally different than another person, and that is totally okay!
+```js
+let currentPlayer;
 
-# Tic Tac Toe Example
-In this section of the class, I am going to go different versions of code that does exactly the same thing -- it creates a Tic Tac Toe application.
+function switchPlayer() {
+  // A function to switch the current player from `X` to `O`
+}
+```
 
-## Algorithm
-Instead of brute forcing the check to see if the game is over, we can do it algorithmically. We can keep track of each player's current tally of pieces in each row, column, and diagonal and if that tally is equal to three, they have won. We can do this using nested arrays. If this is unclear, do not worry! Its a bit outside the scope of this class. I used data attributes on the HTML tags to get the coordinates of the clicked on grid item, and I use those coordinates in order to update the player's score at the at position. 
+#### Questions:
 
-## Functional Based
-* If we look at the `vanilla/script.js` or the `pf-functional-vanilla/app.js` file you can see how the code is largely composed as a set of functions. I broke each chunk of logic into a singular function so that the code is easy to debug. Any issues that pop up can be more easy to find and isolate.  
+- Can we turn these into one or more classes?
+- What would that look like?
+- Would there be any benefits be to using OOP principles? any drawbacks?
 
-Take a few minutes to go over the the code. 
-Thinking big picture, what stands out? 
-What do you understand? 
-What is confusing?
-How is this different from how you may have structured this app?
+## Start Small, Stay Small
 
-## OOP Approach
-* This takes the same functionality of the code before but restructures it so that the code falls into methods within a class. Yes, there is JQuery here, but it is only used sparingly.  
+Write code using concrete steps and check each step **before continuing** on to the next step. By far, one of the most common mistakes that new programmers make is to write too much code before verifying the result. When we write too much at once and things break (_which they always do_) we won't know what is causing the problem.
 
-Take a few minutes to look over this code. 
+There is another benefit to this approach: Humans thrive on wins and forward progress! That rush you get from success will motivate you to tackle the next challenge versus spending a long time on something that doesn't work and you can't unravel, which can be a real motivation killer.
 
-## MV Approach
-* We can also structure the code so that it falls under two different classes -- one that stores all of the responses to user interaction called the *View* controller, and one that stores the data processing methodology called the *Model*. [Here](https://git.generalassemb.ly/dc-wdi-fundamentals/js-model-view-separation) is a further breakdown on how this can look. MV approach is an example of *Separation of Concerns*, a concept very important to programming large applications.  
+### Activity: Write and Verify a Function to Switch the Current Player
 
-Model-View separation is an important concept in developing web apps.  Why might it be important to separate your model components from your view?
+Work together in your team to fill in the code in your `switchPlayer` function such that you can call it multiple times to alternate between `X` and `O`. Make sure that your function does **not** perform a `console.log`. Instead it will need to update a value stored in memory (such as a variable or object property). There are many possible options!
 
-## Review
-* What are two techniques we can use for early planning (before we start writing code)?
-* Why is planning such an important step of development?
-* What does "refactor" mean?
-* What are some different application design strategies we can use?
-* What are some good strategies for writing modular and clear code?
-* Explain the difference between a functional approach and an OOP approach.
-* What does Separation of Concerns mean in regards to programming?
+## Write Readable Code
+
+When you are working on a larger project, there are a couple of ways that can make your code easier to read, follow and debug:
+
+1. Make your code as close to normal speech as possible.
+   - Use clear and descriptive variable names. Avoid using variable names like `x`.
+   - If you're naming a variable that will hold an array pluralize the variable name. Similarly, use the singular for naming individual elements.
+   - Treat objects like nouns (e.g., `game`, `player`) when naming them. Likewise, treat functions or methods like verbs using names that imply an action being taken (e.g., `checkWinConditions`, `switchPlayer`, `incrementScore`).
+1. Clean up your console logs as you go. If you're using a console log to debug or test your code, make sure to remove it after you've verified the result is what you expected. It's very difficult to debug or verify a step in your code if you have multiple unrelated messages in your console. (You can also practice using other techniques like adding breakpoints).
+1. Keep your code DRY (don't repeat yourself). Every time you duplicate your code you make more work for yourself and create more opportunities for bugs in your code. This shouldn't stop you from writing code as you're working through a problem, but the trick is to periodically look for opportunities to consolidate parts where repetition has crept in to your code using a function, class or variable.
+1. Be consistent. If you are using semi-colons use them consistently. The same can apply for things like using double or single quotation marks or using function declaration syntax versus function expressions. Use the same spacing. This is not only the hallmark of a professional developer, it also makes it easier for you to identify errors in your code such as a missing closing tag or curly brace.
+1. Write your code in small, easily digestable pieces. There is a lot of general programming advice that tells us to keep our code as concise and focuses as possible. Again, don't let this stop you from writing code, but if you find that a function you've written has 30 lines of code in it, you could probably look at separating it into multiple more focused and reuseable functions. (In some cases, these will be the types of activities you will perform later when refactoring your code.) There are many guidelines that you can follow in this regard, one popular one is Sandi Metz's rules:
+   - Methods/Functions can be no longer than five lines of code.
+   - Classes can be no longer than one hundred lines of code.
+   - [more here](https://robots.thoughtbot.com/sandi-metz-rules-for-developers)
+
+> One of the core truisms of software development is that as your code grows and requirements for the system that you are building change, additional logic will be added that is not yet present in the current system. In almost all cases, maintainability over the life of the code is more important than optimizing its present state.
+>
+> Obie Fernandez about _POODR by Sandi Metz_
+
+## Refactor
+
+With all coding projects, your first goal should be to get something that works. You can focus on making it better afterwards! This is known as _refactoring_. Refactoring refers to restructuring your code to make it more readable and less complex without changing the functionality.
+
+There is an old saying that _Perfection is the enemy of done_. Don't allow yourself to be so caught up in writing 'clean' or 'perfect' or 'correct' code that you don't deliver working code.
