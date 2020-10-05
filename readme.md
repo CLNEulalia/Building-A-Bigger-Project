@@ -134,7 +134,7 @@ When you are working on a larger project, there are a couple of ways that can ma
 
 1. Make your code as close to normal speech as possible.
    - Use clear and descriptive variable names. Avoid using variable names like `x`.
-   - If you're naming a variable that will hold an array pluralize, the variable name. Similarly, use the singular for naming individual elements and primitive values.
+   - If you're naming a variable that will hold an array, pluralize the variable name. Similarly, use the singular for naming individual elements and primitive values.
    - Treat objects like nouns (e.g., `game`, `player`) when naming them. Likewise, treat functions or methods like verbs using names that imply an action being taken (e.g., `checkWinConditions`, `switchPlayer`, `incrementScore`). Use `is` in variables meant to convey a true or false results (e.g., `isGameEnded`, `isTacoTuesday`).
 1. Clean up your console logs as you go. If you're using a console log to debug or test your code, make sure to remove it after you've verified the result is what you expected. It's very difficult to debug or verify a step in your code if you have multiple unrelated messages in your console. (You can also practice using other techniques like adding breakpoints).
 1. Keep your code DRY (don't repeat yourself). Every time you duplicate your code you make more work for yourself and create more opportunities for bugs in your code. This shouldn't stop you from writing code as you're working through a problem. The trick is to periodically look for opportunities to consolidate the parts where repetition has crept into your code using a function, class, or variable.
