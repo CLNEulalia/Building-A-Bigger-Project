@@ -160,4 +160,4 @@ There is an old saying that _Perfection is the enemy of done_. Don't allow yours
 
 ## Next Steps
 
-Next you'll be code your Tic Tac Toe game using HTML, CSS and JS. Following the instructions found in the [Tic Tac Toe](../../../tic-tac-toe) lab repository, build your game inside the repository that you created during this lecture.
+Code your Tic Tac Toe game using HTML, CSS and JS. Following the instructions found in the [Tic Tac Toe](../../../tic-tac-toe) lab repository, build your game inside the repository that you created during this lecture.
